@@ -6,15 +6,18 @@
 //const { getUserById } = require('./js-fundation/03-callbacks');
 // const { getUserById, getUserByArrowFunction } = require('./js-fundation/04-arrow');
 // const {buildMakePerson} = require('./js-fundation/05-factory');
+//const getPokemonById = require('./js-fundation/06-promises');
+const { buildLoger } = require('./plugins');
 
+const logger = buildLoger('app.js');
 
-const getPokemonById = require('./js-fundation/06-promises');
+logger.log('Hola mundo');
+logger.error('Esto es algo malo');
 
-
-const info = getPokemonById(4)
-    .then( (pokemon) => console.log({pokemon}))
-    .catch( (err) => console.log('Intente de nuevo') )
-    .finally( () => console.log('Finalmente'));
+// const info = getPokemonById(4)
+//     .then( (pokemon) => console.log({pokemon}))
+//     .catch( (err) => console.log('Intente de nuevo') )
+//     .finally( () => console.log('Finalmente'));
 
 
 
