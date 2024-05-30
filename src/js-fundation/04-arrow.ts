@@ -1,4 +1,7 @@
-
+interface User{
+    id: number,
+    name: string,
+}
 
 const users = [
     {
@@ -12,21 +15,13 @@ const users = [
 ];
 
 
-const getUserByArrowFunction = (id, callback) => {
+export const getUserByArrowFunction = (id: number, callback: (err?: string, user?:User) => void) => {
     const user = users.find ((user) =>  user.id === id);
 
     ( user ) 
-        ? callback(null, user)
+        ? callback(undefined, user)
         : callback(`User not found with id ${id}`)
 
 }
-
-
-module.exports = {
-    getUserByArrowFunction
-}
-
-
-
 
 

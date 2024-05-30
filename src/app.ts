@@ -1,4 +1,4 @@
-
+import { buildLogger } from "./plugins/logger.plugin";
 
 // const { getId, getAge } = require('./plugins');
 //const {emailTemplate} = require('./js-fundation/01-template');
@@ -7,9 +7,9 @@
 // const { getUserById, getUserByArrowFunction } = require('./js-fundation/04-arrow');
 // const {buildMakePerson} = require('./js-fundation/05-factory');
 //const getPokemonById = require('./js-fundation/06-promises');
-const { buildLoger } = require('./plugins');
+// const { buildLoger } = require('./plugins');
 
-const logger = buildLoger('app.js');
+const logger = buildLogger('app.js');
 
 logger.log('Hola mundo');
 logger.error('Esto es algo malo');
