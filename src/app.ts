@@ -9,10 +9,10 @@ import { buildLogger } from "./plugins/logger.plugin";
 //const getPokemonById = require('./js-fundation/06-promises');
 // const { buildLoger } = require('./plugins');
 
-const logger = buildLogger('app.js');
+// const logger = buildLogger('app.js');
 
-logger.log('Hola mundo');
-logger.error('Esto es algo malo');
+// logger.log('Hola mundo');
+// logger.error('Esto es algo malo');
 
 // const info = getPokemonById(4)
 //     .then( (pokemon) => console.log({pokemon}))
